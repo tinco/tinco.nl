@@ -17,7 +17,6 @@ p = 0
 # Build colors
 buildColors = () ->
   buildColorsRun()
-  setTimeout buildColors, 3000
 
 buildColorsRun = () ->
   getBlock = (x,y) -> document.getElementById('header').getElementsByTagName('tr')[y].children[x]
@@ -113,5 +112,4 @@ hsl2rgb = (h, s, l, o) ->
 
 header = document.getElementById('header')
 header.innerHTML = makeHeader()
-buildColors()
-
+setInterval buildColors, 4000
