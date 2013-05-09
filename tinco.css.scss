@@ -3,33 +3,45 @@ body {
   color: white;
 }
 
-#page {
-}
-
 #content {
   margin-top: 20px;
+}
 
+ul.social {
+  margin-top: 10px;
   text-align: center;
-  .social {
-    margin-top: 10px;
 
-    li {
-      display: inline;
-      list-style-type: none;
-      padding-right: 1em;
+  li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 1em;
 
-      a {
-        font-family: impact, arial black;
-        text-decoration: none;
-        color: white;
-      }
+    a {
+      font-family: arial black;
+      font-weight: 400;
+      text-decoration: none;
+      color: white;
+      text-indent: -9999px;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-size: cover;
+    }
 
-      img {
-        padding-right: 10px;
-        padding-top: 5px;
-        width: 30px;
-        height: 30px;
-      }
+    &.github a {
+      background-image: url('octocat.png');
+    }
+
+    &.facebook a {
+      background-image: url('facebook.png');
+    }
+
+    &.phusion a {
+      background-image: url('phusion.png');
+    }
+
+    &.twitter a {
+      background-image: url('twitter.png');
     }
   }
 }
