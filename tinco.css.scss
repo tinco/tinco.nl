@@ -1,5 +1,5 @@
 body {
-  background-color: #222222;
+  background-color: #2a2a2a;
   color: #f8f8f2;
   font-size: 13px;
 }
@@ -8,19 +8,70 @@ body {
   margin-top: 20px;
 }
 
+#header {
+  margin-bottom: 2em;
+}
+
 pre {
   overflow: scroll;
 }
 
-.summary {
-  margin-top: 50px;
-  margin-bottom: 30px;
-  font-size: 2.4em;
-  text-align: center;
-  color: #a6e22e;
-}
-p {
-  font-size: 2em;
+.post {
+  .summary {
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 0;
+    font-size: 2.4em;
+    text-align: center;
+    color: #a6e22e;
+  }
+
+  p {
+    font-size: 2em;
+    padding: 0px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  h1 {
+    font-size: 3.5em;
+    color: #66d9ef;
+    margin-top: 0;
+    margin-bottom: .5em;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    padding: 0px;
+    color: #f6aa11;
+    margin-top: 0;
+    margin-bottom: .5em;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 2.5em;
+    font-weight: normal;
+    padding: 0px;
+    margin-top: 0;
+    margin-bottom: .5em;
+    padding: 0;
+    color: #66d9ef;
+  }
+
+  h4 {
+    font-size: 2em;
+    font-weight: normal;
+    padding: 0px;
+    color: #f6aa11;
+    margin-top: 0;
+    margin-bottom: .5em;
+    padding: 0;
+    color: #66d9ef;
+  }
 }
 
 ul.social {

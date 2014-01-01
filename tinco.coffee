@@ -24,7 +24,7 @@ buildColorsRun = () ->
 
   if block?
     if not block.classList.contains('colored')
-        block.style.backgroundColor = hsl2rgb(hue, .5,.5,1).hex
+        block.style.backgroundColor = hsl2rgb(hue, .8,.5,1).hex
   if x - 2 >= 0
     previousBlock = getBlock(x - 2,y)
     if previousBlock? && not previousBlock.classList.contains('colored')
