@@ -1,10 +1,16 @@
 # Cycle through colors
 hue = 0
+last_time = 0
 cycleColors = () ->
+  if last_time - Date.now() > -50
+    return
+  else
+    last_time = Date.now()
+
   setColors hsl2rgb(hue, .5, .5, 1).hex
   hue = hue + 0.005
   hue %= 1
-  setTimeout cycleColors, 50
+  setTimeout cycleColors, 150
 
 setColors = (hex) ->
   $("#header td.background").css('background-color', hex)
