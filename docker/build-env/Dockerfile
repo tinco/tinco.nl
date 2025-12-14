@@ -1,3 +1,3 @@
-FROM node
-RUN npm install -g coffee-script node-sass
+FROM node:latest
+RUN npm install coffeescript node-sass
 CMD cd /app; make

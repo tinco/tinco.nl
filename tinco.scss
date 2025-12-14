@@ -99,15 +99,28 @@ ul.social {
     }
 
     &.facebook a {
-      background-image: url('facebook.png');
+      background-image: url('facebook.svg');
     }
 
     &.phusion a {
       background-image: url('phusion.png');
     }
 
+    &.aeroscan a {
+      background-image: url('aeroscan.png');
+    }
+
     &.twitter a {
-      background-image: url('twitter.png');
+      background-image: url('x.svg');
+      filter: invert(1);
+    }
+
+    &.linkedin a {
+      background-image: url('linkedin.svg');
+    }
+
+    &.bosun a {
+      background-image: url('bosun.png');
     }
   }
 }
